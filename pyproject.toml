@@ -2,7 +2,7 @@
 name = "agentic-design-patterns"
 version = "0.1.0"
 description = "Agentic design patterns with LangGraph"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.14"
 dependencies = [
     "langgraph>=1.0.0",
     "langchain>=1.0.0",
@@ -12,6 +12,7 @@ dependencies = [
     "jupyterlab>=4.0.0",
     "langgraph-cli[inmem]>=0.4.0",
     "langchain-mcp-adapters",
+    "langchain-google-genai>=4.1.2",
 ]
 [project.optional-dependencies]
 # Extra tools for development
