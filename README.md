@@ -5,6 +5,8 @@ This repository contains notebooks from [**Agentic Design Patterns: A Hands-On G
 The code examples have been adapted and optimized for local development using Jupyter Lab with uv for dependency management.
 Additionally, this repo only has examples that use LangChain/LangGraph, I will be adding the examples using google ADK in the future.
 
+Original code can be found in this repo https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV
+
 ## Prerequisites
 
 - **Python 3.11 or 3.12 or 3.13** (required)
