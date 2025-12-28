@@ -96,17 +96,66 @@ All dependencies are managed via uv and specified in `pyproject.toml`.
 
 ## Usage
 
-### Running Jupyter Lab
+### Option 1: Running with Jupyter Lab (Browser-based)
+
+Start Jupyter Lab in your browser:
 ```bash
 uv run jupyter lab
 ```
 
-### Adding New Dependencies
+This opens an interactive environment where you can run and edit notebooks.
+
+### Option 2: Running with PyCharm (IDE-based)
+
+**Requirements**: PyCharm Professional (Community Edition doesn't support Jupyter notebooks)
+
+#### Initial Setup
+
+1. **Open Project in PyCharm**
+   ```bash
+   # From terminal
+   open -a "PyCharm" .
+
+   # Or: File → Open → Select the agentic_design_patterns folder
+   ```
+
+2. **Configure Python Interpreter**
+   - Bottom-right corner of PyCharm → Click on Python version
+   - Select **Add New Interpreter** → **Add Local Interpreter**
+   - Choose **Existing environment**
+   - Click folder icon and navigate to:
+     ```
+     .venv/bin/python
+     ```
+   - Click **OK**
+
+3. **Verify Interpreter**
+   - Open any `.ipynb` file (e.g., `chapter_1/Prompt_Chaining.ipynb`)
+   - PyCharm should recognize it as a Jupyter notebook
+   - If prompted, click **Configure Jupyter Server** → **Managed Server**
+
+#### Running Notebooks in PyCharm
+
+- **Run a cell**: Click ▶️ play button or press `Shift+Enter`
+- **Run all cells**: Right-click → **Run All Cells**
+- **Add new cell**: Click `+` button or use keyboard shortcuts
+- **View variables**: Check the **Variables** tab at the bottom
+- **Interactive outputs**: Charts and visualizations render inline
+
+
+### Common Commands
+
+#### Adding New Dependencies
 ```bash
 uv add package-name
 ```
 
-### Running Python Scripts
+#### Running Python Scripts
 ```bash
 uv run python script.py
+```
+
+#### Updating Dependencies
+```bash
+uv sync
 ```
