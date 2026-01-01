@@ -3,7 +3,7 @@
 This repository contains notebooks from [**Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems**](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018) by Antonio Gulli.
 
 The code examples have been adapted and optimized for local development using Jupyter Lab with uv for dependency management.
-Additionally, this repo only has examples that use LangChain/LangGraph, I will be adding the examples using google ADK in the future.
+This repository includes examples using **LangChain/LangGraph**, **Google ADK** (Agent Development Kit), and **CrewAI**.
 
 Original code can be found in this repo https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV
 
@@ -69,27 +69,52 @@ Create a `.env` file in the project root with your API keys:
 # OpenAI (for chapter 1)
 OPENAI_API_KEY=your_openai_api_key_here
 
+# Google (for Google ADK examples in chapter 2)
+GOOGLE_API_KEY=your_google_api_key_here
 ```
+
+**Getting your Google API key:**
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key" to generate a new key
 
 ## Project Structure
 
 ```
 agentic_design_patterns/
-├── chapter_1/           # Prompt Chaining examples
-├── chapter_2/           # Routing patterns
-├── pyproject.toml       # Project dependencies
+├── chapter_1/           # Prompt Chaining (LangChain)
+├── chapter_2/           # Routing (LangGraph, Google ADK)
+├── chapter_3/           # Parallelization (LangChain)
+├── chapter_4/           # Reflection (LangChain, Iterative Loop)
+├── chapter_5/           # Tools (LangChain)
+├── chapter_6/           # Planning (CrewAI)
+├── requirements.txt     # Python dependencies
+├── pyproject.toml       # Project configuration
 ├── .python-version      # Python version (3.11)
-└── README.md
+├── .env                 # API keys (create from .env_template)
+└── README.md            # This file
 ```
 
 ## Dependencies
 
 This project uses the following key dependencies:
+
+### LangChain/LangGraph
 - `langchain` - Framework for building LLM applications
 - `langchain-openai` - OpenAI integration
 - `langchain-google-genai` - Google Gemini integration
 - `langchain-anthropic` - Anthropic Claude integration
 - `langgraph` - Graph-based agent workflows
+
+### Google ADK
+- `google-adk` - Google Agent Development Kit for building AI agents
+- `google-generativeai` - Google Generative AI SDK (Gemini models)
+
+### CrewAI
+- `crewai` - Multi-agent orchestration framework
+- `crewai-tools` - Pre-built tools for CrewAI agents
+
+### Development
 - `jupyterlab` - Interactive notebook environment
 
 All dependencies are managed via uv and specified in `pyproject.toml`.
