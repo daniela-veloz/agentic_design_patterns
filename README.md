@@ -84,8 +84,8 @@ GOOGLE_API_KEY=your_google_api_key_here
 agentic_design_patterns/
 ├── chapter_1/           # Prompt Chaining (LangChain)
 ├── chapter_2/           # Routing (LangGraph, Google ADK)
-├── chapter_3/           # Parallelization (LangChain)
-├── chapter_4/           # Reflection (LangChain, Iterative Loop)
+├── chapter_3/           # Parallelization (LangChain, Google ADK)
+├── chapter_4/           # Reflection (LangChain, Iterative Loop, Google ADK)
 ├── chapter_5/           # Tools (LangChain)
 ├── chapter_6/           # Planning (CrewAI)
 ├── requirements.txt     # Python dependencies
