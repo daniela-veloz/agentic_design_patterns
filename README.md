@@ -87,7 +87,8 @@ agentic_design_patterns/
 ├── chapter_3/           # Parallelization (LangChain, Google ADK)
 ├── chapter_4/           # Reflection (LangChain, Iterative Loop, Google ADK)
 ├── chapter_5/           # Tools (LangChain, CrewAI, Google ADK)
-├── chapter_6/           # Planning (CrewAI)
+├── chapter_6/           # Planning (CrewAI, Deep Research API)
+├── chapter_7/           # Multi-Agent Collaboration (Google ADK)
 ├── requirements.txt     # Python dependencies
 ├── pyproject.toml       # Project configuration
 ├── .python-version      # Python version (3.11)
