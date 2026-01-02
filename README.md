@@ -86,7 +86,7 @@ agentic_design_patterns/
 ├── chapter_2/           # Routing (LangGraph, Google ADK)
 ├── chapter_3/           # Parallelization (LangChain, Google ADK)
 ├── chapter_4/           # Reflection (LangChain, Iterative Loop, Google ADK)
-├── chapter_5/           # Tools (LangChain)
+├── chapter_5/           # Tools (LangChain, CrewAI)
 ├── chapter_6/           # Planning (CrewAI)
 ├── requirements.txt     # Python dependencies
 ├── pyproject.toml       # Project configuration
